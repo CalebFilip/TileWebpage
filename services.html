@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/logos/jj-logo-zip-file/png/jj-favicon-color.png">
     <link href="style.css" rel="stylesheet">
-    <script src="script.js" defer></script>
+    <script src="script/servicesScript.js" defer></script>
 </head>
 <body>
     <header>
@@ -36,7 +36,7 @@
                 Transform your kitchen or bathroom with stunning marble or granite countertops. I provide custom-fitted,
                 durable surfaces that enhance the beauty and functionality of your space, perfect for meal prep, hosting, and everyday use.
             </p>
-            <img src="images/countertop.jpg" alt="Granite countertops in a kitchen.">
+            <img src="images/countertop.jpg" alt="Granite countertops in a kitchen." class="clickable-image">
         </div>
         <div class="service">
             <h3>Bathrooms</h3>
@@ -44,7 +44,7 @@
                 Elevate your bathroom with elegant stone and tile installations, from custom vanities to sleek showers and floors.
                 I specialize in creating luxurious, easy-to-maintain bathroom spaces tailored to your personal style.
             </p>
-            <img src="images/bathroom.jpg" alt="Tile floor and wall in a shower.">   
+            <img src="images/bathroom.jpg" alt="Tile floor and wall in a shower." class="clickable-image">   
         </div>
         <div class="service">
             <h3>Backsplashes</h3>
@@ -52,7 +52,7 @@
                 Add a touch of sophistication to your kitchen or bathroom with our expertly installed backsplashes. Using marble, 
                 granite, or ceramic tiles, I design eye-catching features that protect your walls while adding visual interest.
             </p>
-            <img src="images/backsplash.jpg" alt="White tile backsplash over a sink.">
+            <img src="images/backsplash.jpg" alt="White tile backsplash over a sink." class="clickable-image">
         </div>
         <div class="service">
             <h3>Flooring</h3>
@@ -60,7 +60,12 @@
                 Upgrade your home with long-lasting, beautiful flooring. Whether it's marble, granite, ceramic, or porcelain, my
                 precision installation ensures a high-quality finish that stands up to everyday wear and tear, combining durability with aesthetic appeal.
             </p>
-            <img src="images/tileFloor.jpg" alt="Black tile flooring next to fireplace.">
+            <img src="images/tileFloor.jpg" alt="Black tile flooring next to fireplace." class="clickable-image">
+        </div>
+        <div class="modal" id="imageModal">
+            <span class="close" id="closeModal">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
         </div>
 
     </main>
