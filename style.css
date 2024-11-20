@@ -233,23 +233,73 @@ address{
     border-radius: 10px;
 }
 
-#galleryMain {
+.filterContents {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     padding: 20px;
 }
 
-#galleryMain img {
+
+.filterContents .filter img {
     width: 100%;
     max-height: 300px;
-    height: auto;
     border-radius: 10px;
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-#galleryMain img:hover {
+/* .filter:hover {
     transform: scale(1.05);
+}  */
+
+
+.filterContents {
+    overflow: hidden;
+  }
+  
+.filter {
+    display: none;
+}
+  
+.show {
+    display: block;
+}
+
+.filter-btn {
+    float: left;
+    background-color: #2196F3;
+    color: #ffffff;
+    width: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin: 2px;
+    cursor: pointer;
+}
+  
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+
+hr {
+    border:none;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px; 
 }

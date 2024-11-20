@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/logos/jj-logo-zip-file/png/jj-favicon-color.png">
     <link href="style.css" rel="stylesheet">
+    <script src="galleryScript.js" defer></script>
 </head>
 <body>
     <header>
@@ -28,15 +29,24 @@
         </nav>
     </header>
     <main id="galleryMain">
-        <a target="_blank" href="images/backsplash.jpg"><img src="images/backsplash.jpg" alt="Temporary Image for Project"></a>
-        <a target="_blank" href="images/bathroom.jpg"><img src="images/bathroom.jpg" alt="Temporary Image for Project"></a>
-        <a target="_blank" href="images/countertop.jpg"><img src="images/countertop.jpg" alt="Temporary Image for Project"></a>
-        <a target="_blank" href="images/temp.jpg"><img src="images/temp.jpeg" alt="Temporary Image for Project"></a>
-        <a target="_blank" href="images/temp1.jpg"><img src="images/temp1.jpg" alt="Temporary Image for Project"></a>
-        <a target="_blank" href="images/temp2.jpg"><img src="images/temp2.jpg" alt="Temporary Image for Project"></a>
-        <a target="_blank" href="images/temp3.jpg"><img src="images/temp3.jpg" alt="Temporary Image for Project"></a>
-        <a target="_blank" href="images/temp4.jpg"><img src="images/temp4.jpg" alt="Temporary Image for Project"></a>
-        <a target="_blank" href="images/temp5.jpg"><img src="images/temp5.jpg" alt="Temporary Image for Project"></a>
+        <div id="filterButtons">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('countertop')"> Countertops</button>
+            <button class="btn" onclick="filterSelection('floor')"> Floors</button>
+            <button class="btn" onclick="filterSelection('backsplash')"> Backsplashes</button>
+            <button class="btn" onclick="filterSelection('shower')"> Showers</button>    
+        </div>
+        <div class="filterContents">
+            <a class="filter backsplash" target="_blank" href="images/backsplash.jpg"><img src="images/backsplash.jpg" alt="Temporary Image for Project"></a>
+            <a class="filter shower floor" target="_blank" href="images/bathroom.jpg"><img src="images/bathroom.jpg" alt="Temporary Image for Project"></a>
+            <a class="filter countertop backsplash" target="_blank" href="images/countertop.jpg"><img src="images/countertop.jpg" alt="Temporary Image for Project"></a>
+            <a class="filter countertop backsplash" target="_blank" href="images/temp1.jpg"><img src="images/temp1.jpg" alt="Temporary Image for Project"></a>
+            <a class="filter countertop" target="_blank" href="images/temp2.jpg"><img src="images/temp2.jpg" alt="Temporary Image for Project"></a>
+            <a class="filter shower floor countertop" target="_blank" href="images/temp3.jpg"><img src="images/temp3.jpg" alt="Temporary Image for Project"></a>
+            <a class="filter shower" target="_blank" href="images/temp4.jpg"><img src="images/temp4.jpg" alt="Temporary Image for Project"></a>
+            <a class="filter shower floor" target="_blank" href="images/temp5.jpg"><img src="images/temp5.jpg" alt="Temporary Image for Project"></a>
+            <a class="filter floor" target="_blank" href="images/tileFloor.jpg"><img src="images/tileFloor.jpg" alt="Temporary Image for Project"></a>
+        </div>
     </main>
     <footer>
         <p>© J&J Marble Granite and Ceramics. All rights reserved.</p>
