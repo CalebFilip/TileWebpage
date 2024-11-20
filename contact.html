@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="images/logos/jj-logo-zip-file/png/jj-favicon-color.png">
     <link href="style.css" rel="stylesheet">
+    <script src="script/contactScript.js" defer></script>
 </head>
 <body>
     <header>
@@ -31,30 +32,43 @@
         <hr>
         <div id="contactMain">
             <div id="contactForm"><br>
-            <h2>Contact Information</h2><br>
-            <address>
-                Email: <a href="mailto:temporary@gmail.com">placeholder@gmail.com</a><br>
-                Phone: <a href="tel:+1704555555">(704)555-555</a><br>
-            </address> <br>
-            <h3>Or leave your message here:</h3>
-                <form action="#">
-                    <div>
-                        <input type="text" name="name" id="name" placeholder="Name" required>
-                    </div>        
-                    <div>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                    </div>                        
-                    <div>
-                        <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
-                    </div>                
-                    <div>
-                        <textarea name="message" id="message" placeholder="Information"></textarea>
-                    </div>
-            
-                    <div class="btn">
-                        <input type="submit" name="submit" id ="submit" value="Send">
-                    </div>
-                </form>
+                <div class="accordion">
+                    <section>
+                        <button class="accordion-label"><h2>Contact Information</h2></button>
+                        <div class="accordion-content">
+                        <br>
+                        <address>
+                            Email: <a href="mailto:temporary@gmail.com">placeholder@gmail.com</a><br>
+                            Phone: <a href="tel:+1704555555">(704)555-555</a><br>
+                        </address>
+                        </div>
+                    </section>
+
+
+                    <section>
+                        <button class="accordion-label"><h3>Or leave your message here:</h3></button>
+                        <div class="accordion-content">
+                        <br>
+                        <form action="#">
+                            <div>
+                                <input type="text" name="name" id="name" placeholder="Name" required>
+                            </div>        
+                            <div>
+                                <input type="email" name="email" id="email" placeholder="Email" required>
+                            </div>                        
+                            <div>
+                                <input type="tel" name="phone" id="phone" placeholder="Phone number" required>
+                            </div>                
+                            <div>
+                                <textarea name="message" id="message" placeholder="Information"></textarea>
+                            </div>
+                            <div class="submitbtn">
+                                <input type="submit" name="submit" id ="submit" value="Send">
+                            </div>
+                        </div>
+                        </form> 
+                    </section>               
+                </div>
             </div>
             <div id="contactPicture"><img src="images/johnFilipEdited.jpg" alt="John. Owner of J&J"></div>
         </div>
